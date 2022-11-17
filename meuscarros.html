@@ -80,9 +80,10 @@
 
         }
 
-        .meuscarros1>p {
+        .meuscarros1>article>p {
             margin-top: 10px;
             text-indent: 10px;
+          
         }
 
         main .botao-excluir {
@@ -108,7 +109,7 @@
 
         }
 
-        .meuscarros2>p {
+        .meuscarros2>article>p {
             margin-top: 10px;
             text-indent: 10px;
         }
@@ -126,16 +127,19 @@
         }
 
         .botao-adicionar {
-            position: absolute;
-            left: 50%;
-            padding: 10px 10px 10px 10px;
-            text-align: center;
-            padding: 5px 5px 5px 5px;
-            border-radius: 5px;
-            border-color: rgba(128, 106, 250, 0.842);
-            background-color: rgba(132, 106, 250, 0.842);
+           
+           position: absolute;
+           left: 45%;
+           width: 150px;
+           padding: 10px 10px 10px 10px;
+           text-align: center;
+           font-size: 16px;
+           padding: 5px 5px 5px 5px;
+           border-radius: 7px;
+           border-color: rgba(248, 248, 250, 0.637);
+           background-color: rgba(106, 180, 250, 0.842);
 
-        }
+       }
 
 
 
@@ -179,7 +183,7 @@
         </div>
         <nav>
             <a href="meuscarros.html">Meus Carros</a>
-            <a href="#">Minhas Lavagens</a>
+            <a href="minhaslavagens.html">Minhas Lavagens</a>
             <a href="pedirlavagem.html"><button class="botao_sair">Sair</button></a>
         </nav>
     </header>
@@ -187,24 +191,26 @@
         <section class="titulo">
             <h1>Meus Carros</h1>
         </section>
-        <section class="meuscarros1">
-            <p>
-                <strong>Nissanc Kicks</strong>
-                <span>2018</span>
-            </p>
+        <section class="meuscarros1">            
+                <article>
+                    <p><strong>Nissanc Kicks</strong></p>
+                    <p>2018</p>
+                </article>
+            
             <button class="botao-excluir">Excluir Carro</button>
 
         </section>
         <section class="meuscarros2">
-            <p>
-                <strong>Chevrolet Onix</strong>
-                <span>2015</span>
-            </p>
+            
+                <article>
+                    <p><strong>Chevrolet Onix</strong></p>
+                    <p>2015</p>
+                </article>
+            
             <button class="botao-excluir">Excluir Carro</button>
-
         </section>
         <section class="terceira-separacao">
-            <button class="botao-adicionar">Adicionar</button>
+            <a href="adicionarcarro.html"><button class="botao-adicionar">Adicionar</button></a>
         </section>
 
 
