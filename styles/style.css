@@ -22,7 +22,7 @@ body {
 /* header */
 header {
     display: flex;
-    background-color: lightblue;
+    background-color: #BEF7FE;
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
@@ -51,7 +51,7 @@ header {
 /*main-content */
 
 .main-content {
-    background-color: rgb(211, 244, 255);
+    background-color: #EAF7FF;
     height: 800px;
     position: relative;
 
@@ -176,7 +176,7 @@ header {
 
 /*inicio do rodapé*/
 .rodape{
-    background-color: #ADD8E6;
+    background-color: #BEF7FE;
     display: flex;
     justify-content: space-between;
     align-items: center;    
