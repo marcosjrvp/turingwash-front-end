@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body,
+main {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header */
+header {
+    display: flex;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.header__nav a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    color: #000000;
+
+}
+
+.header__nav__btn-sair {
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    border-color: rgba(173, 216, 230, 0.548);
+    background-color: rgb(180, 227, 243);
+    padding: 2px 7px;
+}
+
+/* final header*/
+
+/*main-content */
+
+.main-content {
+    background-color: rgb(211, 244, 255);
+    height: 800px;
+    position: relative;
+
+
+}
+
+.main_titulo {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 25px;
+
+}
+
+/* ordenar-container */
+.ordenar-container {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+
+
+}
+
+.ordenar-container_select-input {
+    background-color: transparent;
+    border: none;
+    padding-right: 2px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* final odernar-container */
+
+/*inicio do divisor do container*/
+.main-content_divisor {
+    display: grid;
+    grid-template-columns: auto;
+    width: 90%;
+    height: 120px;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+
+}
+
+.main-content_divisor_image {
+    position: relative;
+    height: 80px;
+    padding: 10px 20px;
+
+
+}
+
+.main-content_divisor_nome {
+    position: relative;
+    top: -510%;
+    left: 10%;
+    font-weight: bold;
+}
+
+.main-content_divisor_nota {
+    position: relative;
+    top: -608%;
+    left: 74%;
+}
+
+
+.main-content_divisor_preco {
+
+    position: relative;
+    top: -698%;
+    left: 95%;
+    font-weight: bold;
+
+
+}
+
+.main-content_divisor_preco>span {
+    padding: 2px 2px;
+    background-color: #93F2FE;
+}
+
+
+
+.main-content_divisor_avaliacao {
+    position: relative;
+    top: -407%;
+    left: 77%;
+    font-weight: bold;
+}
+
+.main_content_divisor_botao {
+    position: relative;
+    bottom: 425%;
+    left: 90%;
+    width: 20%;
+
+}
+
+.main_content_divisor_botao button {
+    background-color: #93F2FE;
+    border-radius: 5px;
+    padding: 4px;
+    border: transparent;
+}
+
+
+
+
+.main-content_divisor a {
+    text-decoration: none;
+    color: black;
+}
+/*final divisor do container*/
+/*inicio do rodapé*/
+.rodape{
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    
+}
+
+
+.rodape__nav {
+
+    margin-top: 10px;
+}
+.rodape__nav a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}

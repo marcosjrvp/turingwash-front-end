@@ -5,344 +5,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/turingwash-icon.svg" type="image/x-icon">
     <title>Pedir Lavagem</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
 
-        main h1 {
-            text-align: center;
-        }
-
-        nav>a {
-            padding-right: 10px;
-        }
-
-        header {
-            display: flex;
-            background-color: lightblue;
-            height: 60px;
-
-
-        }
-
-        header .logo {
-            margin-top: 20px;
-            position: relative;
-            left: 15px;
-        }
-
-        header>nav {
-            position: absolute;
-            right: 70px;
-            margin-top: 20px;
-        }
-
-        header>nav>a {
-            text-decoration: none;
-            color: black;
-        }
-
-        nav .botao_sair {
-            border-radius: 10px;
-            border-color: rgba(173, 216, 230, 0.548);
-            background-color: rgb(180, 227, 243);
-            padding: 5px 5px 5px 5px;
-        }
-
-        main {
-            background-color: rgb(211, 244, 255);
-            height: 80vh;
-        }
-
-        body {
-            background-color: rgb(211, 244, 255);
-        }
-
-        .titulo {
-            padding-top: 20px;
-            margin: auto;
-            padding-bottom: 20px;
-            font-size: 25px;
-
-        }
-
-        .menu-escolha {
-            display: flex;
-            margin-bottom: 20px;
-        }
-
-        .menu1 {
-            text-indent: 50px;
-
-        }
-
-        .menu2 {
-            position: absolute;
-            right: 200px;
-        }
-
-
-        .lavador1 {
-            display: flex;
-            margin-bottom: 20px;
-            height: 70px;
-            width: 93%;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: white;
-            border-radius: 7px;
-        }
-
-        .img-lavador {
-            padding-top: 20px;
-            position: absolute;
-            left: 5%;
-        }
-
-        .nome-lavador {
-            position: absolute;
-            left: 20%;
-            padding-top: 10px;
-        }
-
-        .nota-lavador {
-            position: absolute;
-            left: 65%;
-            margin-top: 5px;
-        }
-
-
-
-        .avaliacoes-lavador {
-            position: absolute;
-            left: 70%;
-            margin-top: 45px;
-        }
-
-        .preco-lavador {
-            position: absolute;
-            left: 82%;
-            margin-top: 5px;
-        }
-
-        .botao-lavador {
-            position: absolute;
-            left: 80%;            
-            text-align: center; 
-            padding: 5px 5px 5px 5px;           
-            border-radius: 5px;
-            border-color: aqua;
-            background-color: aqua;
-            margin-top: 35px;
-
-        }
-
-        main a {
-            color: black;
-        }
-
-        .avaliacoes-lavador>a {
-            text-decoration: none;
-        }
-
-        .lavador2 {            
-            display: flex;
-            margin-bottom: 20px;
-            height: 70px;
-            width: 93%;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: white;
-            border-radius: 7px;
-        }
-
-        .lavador3 {
-            display: flex;
-            margin-bottom: 20px;
-            height: 70px;
-            width: 93%;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: white;
-            border-radius: 7px;
-        }
-        .lavador4{
-            display: flex;
-            margin-bottom: 20px;
-            height: 70px;
-            width: 93%;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: white;
-            border-radius: 7px;
-        }
-        .rodape{
-            display: flex;
-            background-color: lightblue;
-            height: 20vh;
-            
-        }
-        footer> .logo-rodape{
-            margin-top: 30px;
-            position: relative;
-            left: 10px;
-        }
-        footer .links-rodape{
-            margin-top: 30px;
-            position: relative;
-            left: 350px;
-                         
-        }
-        .links-rodape>a{
-            display: block;
-            color: black;
-            text-decoration: none;
-           
-        }
-        footer .final-rodape{
-            position: absolute;
-            right: 70px;
-            margin-top: 30px;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="#" alt="logo-ituring">
-        </div>
-        <nav>
+    <header class="header">
+        <img src="images/turingwash-logo.svg" alt="logo-ituring">
+        <nav class="header__nav">
             <a href="meuscarros.html">Meus Carros</a>
             <a href="minhaslavagens.html">Minhas Lavagens</a>
-            <button class="botao_sair">Sair</button>
+            <button class="header__nav__btn-sair">Sair</button>
         </nav>
     </header>
-    <main>
-        <section class="titulo">
+    <main class="main-content">
+        <section class="main_titulo">
             <h1>Lavadores Disponíveis Próximos a Você</h1>
         </section>
-        <section class="menu-escolha">
-            <nav class="menu1">
-                <span>Lavar</span> <a href="#">Nissan Kicks</a>
-            </nav>
-            <nav class="menu2">
-                <span>Ordenar por</span> <a href="#">proximidade</a>
-            </nav>
-        </section>
-        <section class="lavador1">
-            <article>
-                <div class="img-lavador">
-                    <img src="#" alt="Foto do Joao">
-                </div>
-                <div class="nome-lavador">
-                    <p>João Pereira</p>
-                </div>
-                <section>
-                    <div class="nota-lavador">
-                        <span>Nota 4.5(998 avaliações)</span>
-                    </div>
-                    <div class="preco-lavador">
-                        <span>R$80</span>
-                    </div>
-                    <div class="avaliacoes-lavador">
-                        <a href="#">Ver avaliações</a>
-                    </div>
-                    <a href="adicionarcarro.html"><button class="botao-lavador">Lavar meu carro</button></a>
-                </section>
-            </article>
-        </section>
-        <section class="lavador2">
-            <article>
-                <div class="img-lavador">
-                    <img src="#" alt="Foto da Joana Santos">
-                </div>
-                <div class="nome-lavador">
-                    <p>Joana Santos</p>
-                </div>
-                <section>
-                    <div class="nota-lavador">
-                        <span>Nota 4.7(489 avaliações)</span>
-                    </div>
-                    <div class="preco-lavador">
-                        <span>R$75</span>
-                    </div>
-                    <div class="avaliacoes-lavador">
-                        <a href="#">Ver avaliações</a>
-                    </div>
-                    <a href="adicionarcarro.html"><button class="botao-lavador">Lavar meu carro</button></a>
-                </section>
-            </article>
-        </section>
-        <section class="lavador3">
-            <article>
-                <div class="img-lavador">
-                    <img src="#" alt="Foto do Matheus Oliveira">
-                </div>
-                <div class="nome-lavador">
-                    <p>Matheus Oliveira</p>
-                </div>
-                <section>
-                    <div class="nota-lavador">
-                        <span>Nota 4.3(783 avaliações)</span>
-                    </div>
-                    <div class="preco-lavador">
-                        <span>R$90</span>
-                    </div>
-                    <div class="avaliacoes-lavador">
-                        <a href="#">Ver avaliações</a>
-                    </div>
-                    <a href="adicionarcarro.html"><button class="botao-lavador">Lavar meu carro</button></a>
-                </section>
-            </article>
-        </section>
-        <section class="lavador4">
-            <article>
-                <div class="img-lavador">
-                    <img src="#" alt="Foto do Pedro Sampaio">
-                </div>
-                <div class="nome-lavador">
-                    <p>Pedro Sampaio</p>
-                </div>
-                <section>
-                    <div class="nota-lavador">
-                        <span>Nota 4.1(801 avaliações)</span>
-                    </div>
-                    <div class="preco-lavador">
-                        <span>R$60</span>
-                    </div>
-                    <div class="avaliacoes-lavador">
-                        <a href="#">Ver avaliações</a>
-                    </div>
-                    <a href="adicionarcarro.html"><button class="botao-lavador">Lavar meu carro</button></a>
-                </section>
-            </article>
+        <article class="ordenar-container">
+            <div>
+                <span>Lavar</span>
+                <select class="ordenar-container_select-input">
+                    <option value="carro1">Nissan Kicks</option>
+                </select>
+            </div>
+            <div>
+                <span>Ordenar por</span>
+                <select class="ordenar-container_select-input">
+                    <option value="proximidade">Proximidade</option>
+                </select>
+            </div>
+        </article>
+        <article class="main-content_divisor">
+            <div>
+                <img src="images/profile.png" alt="Foto do Joao" class="main-content_divisor_image">
+            </div>
+            <div class="main-content_divisor_nome">
+                <span>João Pereira</span>
+            </div>
+            <div class="main-content_divisor_nota">
+                <span>Nota 4.5(998 avaliações)</span>
+            </div>
+            <div class="main-content_divisor_preco">
+                <span>R$80</span>
+            </div>
+            <div class="main-content_divisor_avaliacao">
+                <a href="#">Ver avaliações</a>
+            </div>
+            <div class="main_content_divisor_botao">
+                <a href="adicionarcarro.html"><button class="main-content_divisor_botao-lavar">Lavar meu
+                        carro</button></a>
+            </div>
 
+        </article>
 
-        </section>
+        <article class="main-content_divisor">
+            <div>
+                <img src="images/profile.png" alt="Foto da Joana Santos" class="main-content_divisor_image">
+            </div>
+            <div class="main-content_divisor_nome">
+                <span>Joana Santos</span>
+            </div>
+            <div class="main-content_divisor_nota">
+                <span>Nota 4.7(489 avaliações)</span>
+            </div>
+            <div class="main-content_divisor_preco">
+                <span>R$75</span>
+            </div>
+            <div class="main-content_divisor_avaliacao">
+                <a href="#">Ver avaliações</a>
+            </div>
+            <div class="main_content_divisor_botao">
+                <a href="adicionarcarro.html"><button class="main-content_divisor_botao-lavar">Lavar meu
+                        carro</button></a>
+            </div>
+
+        </article>
+        <article class="main-content_divisor">
+            <div>
+                <img src="images/profile.png" alt="Foto do Matheus Oliveira" class="main-content_divisor_image">
+            </div>
+            <div class="main-content_divisor_nome">
+                <span>Matheus Oliveira</span>
+            </div>
+            <div class="main-content_divisor_nota">
+                <span>Nota 4.3(783 avaliações)</span>
+            </div>
+            <div class="main-content_divisor_preco">
+                <span>R$90</span>
+            </div>
+            <div class="main-content_divisor_avaliacao">
+                <a href="#">Ver avaliações</a>
+            </div>
+            <div class="main_content_divisor_botao">
+                <a href="adicionarcarro.html"><button class="main-content_divisor_botao-lavar">Lavar meu
+                        carro</button></a>
+            </div>
+        </article>
+
+        <article class="main-content_divisor">
+            <div>
+                <img src="images/profile.png" alt="Foto do Pedro Sampaio" class="main-content_divisor_image">
+            </div>
+            <div class="main-content_divisor_nome">
+                <span>Pedro Sampaio</span>
+            </div>
+            <div class="main-content_divisor_nota">
+                <span>Nota 4.1(801 avaliações)</span>
+            </div>
+            <div class="main-content_divisor_preco">
+                <span>R$60</span>
+            </div>
+            <div class="main-content_divisor_avaliacao">
+                <a href="#">Ver avaliações</a>
+            </div>
+            <div class="main_content_divisor_botao">
+                <a href="adicionarcarro.html"><button class="main-content_divisor_botao-lavar">Lavar meu
+                        carro</button></a>
+            </div>
+        </article>
     </main>
     <footer class="rodape">
-        <section class="logo-rodape">
-             
-                <img src="#" alt="logo-rodape-ituring">
-             
+        <section class="rodape__imagem">
+            <img src="images/turingwash-logo.svg" alt="logo-rodape-ituring">
         </section>
         <section>
-            <nav class="links-rodape">
+            <nav class="rodape__nav">
                 <a href="#">Sobre</a>
                 <a href="#">FAQ</a>
                 <a href="#">Contato</a>
                 <a href="#">Termos de Uso</a>
             </nav>
         </section>
-        <section class="final-rodape">
-            <img src="#" alt="foto-ituring-wash">
-            <p>
-                2022-IturingWash. Todos direitos reservados.
-            </p>
+        <section class="rodape__copyright">
+            <img src="images/instagram.png" alt="foto-ituring-wash">            
+                <span>@IturingWash</span>
+                <p>2022. TuringWash. Todos os direitos reservados.</p>            
 
         </section>
 
