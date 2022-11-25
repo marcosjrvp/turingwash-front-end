@@ -4,206 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/turingwash-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style_adicionarcarro.css">
     <title>Adicionar Carros</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        body {
-            background-color: rgb(211, 244, 255);
-        }
-
-        main h1 {
-            text-align: center;
-        }
-
-        nav>a {
-            padding-right: 10px;
-        }
-
-        header {
-            display: flex;
-            background-color: lightblue;
-            height: 60px;
-
-
-        }
-
-        header .logo {
-            margin-top: 20px;
-            position: relative;
-            left: 15px;
-        }
-
-        header>nav {
-            position: absolute;
-            right: 70px;
-            margin-top: 20px;
-        }
-
-        header>nav>a {
-            text-decoration: none;
-            color: black;
-        }
-
-        nav .botao_sair {
-            border-radius: 10px;
-            border-color: rgba(173, 216, 230, 0.548);
-            background-color: rgb(180, 227, 243);
-            padding: 5px 5px 5px 5px;
-        }
-
-        main {
-            background-color: rgb(211, 244, 255);
-            height: 70vh;
-        }
-
-        
-
-        .titulo {
-            padding-top: 20px;
-            margin: auto;
-            padding-bottom: 20px;
-            font-size: 20px;
-
-        }
-
-       
-
-       .carros{
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        width: 80%;
-        height: 60%;
-        border-radius: 15px;
-       }
-       .carros article h3{
-        text-indent: 30px;
-        padding-top: 10px;
-       
-       }
-       .carros select{
-        width: 500px;
-        height: 25px;
-        margin-top: 3px;
-        margin-left: 30px;
-        border-radius: 7px;
-       }
-       select#ano{
-        height: 25px;
-        width: 100px;
-        margin-top: 3px;
-        margin-left: 30px;
-        border-radius: 7px;
-       }
-       .terceira-separacao {
-            margin-top: 15px;
-            display: flex;
-
-        }
-
-        .botao-adicionar {
-           
-            position: absolute;
-            left: 45%;
-            width: 150px;
-            padding: 10px 10px 10px 10px;
-            text-align: center;
-            font-size: 16px;
-            padding: 5px 5px 5px 5px;
-            border-radius: 7px;
-            border-color: rgba(248, 248, 250, 0.637);
-            background-color: rgba(106, 180, 250, 0.842);
-
-        }
-
-
-        
-        .rodape{
-            display: flex;
-            background-color: lightblue;
-            height: 20vh;
-            
-        }
-        footer> .logo-rodape{
-            margin-top: 30px;
-            position: relative;
-            left: 10px;
-        }
-        footer .links-rodape{
-            margin-top: 30px;
-            position: relative;
-            left: 350px;
-                         
-        }
-        .links-rodape>a{
-            display: block;
-            color: black;
-            text-decoration: none;
-        }
-        footer .final-rodape{
-            position: absolute;
-            right: 70px;
-            margin-top: 20px;
-        }
-    </style>
+    
 </head>
-
 <body>
-    <header>
-        <div class="logo">
-            <img src="#" alt="logo-ituring">
-        </div>
-        <nav>
+    <header class="header">
+        <img src="images/turingwash-logo.svg" alt="logo-ituring">
+        <nav class="header__nav">
             <a href="meuscarros.html">Meus Carros</a>
             <a href="minhaslavagens.html">Minhas Lavagens</a>
-            <a href="pedirlavagem.html"><button class="botao_sair">Sair</button></a>
+            <a href="pedirlavagem.html"><button class="header__nav__btn-sair">Sair</button></a>
         </nav>
     </header>
     <main>
-        <section class="titulo">
-            <h1>Adicionar Carro</h1>
-        </section>
-        <section class="carros">
-            <article>
-                <h3>Fabricante</h3>
+        <main class="main-content">
+            <section class="main__titulo">
+                <h1>Adicionar Carro</h1>
+            </section>
+        <section class="main-content__carros">
+            <div>
+                <p>Fabricante</p>
                 <select name="fabricante-carro" id="fabricante"></select>
-            </article>
-            <article>
-                <h3>Modelo</h3>
+            </div>
+            <div>
+                <p>Modelo</p>
                 <select name="fabricante-carro" id="modelo"></select>
-            </article>
-            <article>
-                <h3>Ano</h3>
+            </div>
+            <div>
+                <p>Ano</p>
                 <select name="fabricante-carro" id="ano"></select>
-            </article>      
+            </div>      
         </section>
-        <section class="terceira-separacao">
-            <a href="adicionarcarro.html"><button class="botao-adicionar">Adicionar carro</button></a>
-        </section>
+        <article class="main-content__divisor__botao-adicionar">
+            <a href="adicionarcarro.html"><button class="main-content__botao-adicionar">Adicionar</button></a>
+        </article>
     </main>
     <footer class="rodape">
-        <section class="logo-rodape">
-             
-                <img src="#" alt="logo-rodape-ituring">
-             
+        <section class="rodape__imagem">
+            <img src="images/turingwash-logo.svg" alt="logo-rodape-ituring">
         </section>
         <section>
-            <nav class="links-rodape">
+            <nav class="rodape__nav">
                 <a href="#">Sobre</a>
                 <a href="#">FAQ</a>
                 <a href="#">Contato</a>
                 <a href="#">Termos de Uso</a>
             </nav>
         </section>
-        <section class="final-rodape">
-            <img src="#" alt="foto-ituring-wash">
-            <p>
-                2022-IturingWash. Todos direitos reservados.
-            </p>
+        <section class="rodape__copyright">
+            <img src="images/instagram.png" alt="foto-ituring-wash" class="rodape__copyright__imagem">
+            <div class="rodape__copyright__texto1">
+                <span>@IturingWash</span>
+            </div>
+            <div class="rodape__copyright__texto2">
+                <span>2022. TuringWash. Todos os direitos reservados.</span>
+            </div>
 
         </section>
 
