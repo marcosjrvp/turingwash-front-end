@@ -41,8 +41,8 @@ header {
     font-weight: bold;
     font-size: 18px;
     border-radius: 5px;
-    border-color: rgba(173, 216, 230, 0.548);
-    background-color: rgb(180, 227, 243);
+    border-color: #93F2FE;
+    background-color: #93F2FE;
     padding: 2px 7px;
 }
 
@@ -58,7 +58,7 @@ header {
 
 }
 
-.main_titulo {
+.main__titulo {
     padding-top: 20px;
     text-align: center;
     padding-bottom: 20px;
@@ -77,7 +77,7 @@ header {
 
 }
 
-.ordenar-container_select-input {
+.ordenar-container__select-input {
     background-color: transparent;
     border: none;
     padding-right: 2px;
@@ -88,19 +88,20 @@ header {
 /* final odernar-container */
 
 /*inicio do divisor do container*/
-.main-content_divisor {
-    display: grid;
-    grid-template-columns: auto;
+.main-content__divisor {
+    display: flex;
+    flex-wrap: wrap;     
     width: 90%;
     height: 120px;
     background-color: white;
     align-items: center;
+    justify-content: space-between;
     border-radius: 10px;
     margin: 0 auto 20px auto;
 
 }
 
-.main-content_divisor_image {
+.main-content__divisor__image {
     position: relative;
     height: 80px;
     padding: 10px 20px;
@@ -108,67 +109,63 @@ header {
 
 }
 
-.main-content_divisor_nome {
+.main-content__divisor__nome {  
     position: relative;
-    top: -510%;
-    left: 10%;
+    top: 6%;
+    left: -11%;
+    align-self: flex-start;
     font-weight: bold;
-    width: 125px;
+    
 }
 
-.main-content_divisor_nota {
+.main-content__divisor__nota {
     position: relative;
-    top: -608%;
-    left: 74%;
-    width: 164px;
+    top: 6%;
+    left: 35%;
+    align-self: flex-start;
+    
 }
 
 
-.main-content_divisor_preco {
+.main-content__divisor__preco {
 
     position: relative;
-    top: -698%;
-    left: 95%;
-    font-weight: bold;
-    width: 40px;
-
-
-}
-
-.main-content_divisor_preco>span {
-    padding: 2px 2px;
+    align-self: flex-start;
+    top: 6%;
+    left: 33%;
+    padding: 5px;
+    font-weight: bold;    
     background-color: #93F2FE;
+   
+
+
 }
 
-
-
-.main-content_divisor_avaliacao {
+.main-content__divisor__avaliacao {
     position: relative;
-    top: -407%;
-    left: 77%;
+    align-self: flex-end;
+    top: -10%;
+    left: 1%;
     font-weight: bold;
-    width: 98px;
+    
 }
 
-.main_content_divisor_botao {
+.main-content__divisor__botao {   
     position: relative;
-    bottom: 410%;
-    left: 90%;
-    width: 106px;
+    align-self: flex-end;
+    top: -8%;
+    left: -2%;
+   
 
 }
-
-.main_content_divisor_botao button {
+.main-content__divisor__botao-lavar {
     background-color: #93F2FE;
     border-radius: 5px;
     padding: 4px;
     border: transparent;
 }
 
-
-
-
-.main-content_divisor a {
+.main-content__divisor a {
     text-decoration: none;
     color: black;
 }
