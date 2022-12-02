@@ -6,11 +6,11 @@
 }
 
 html,
-body {
+body{
     min-height: 100%;
 }
 
-body {
+body{
     margin: 0;
     padding: 0;
     display: flex;
@@ -70,8 +70,8 @@ header {
 .main-content__carros {
     margin-top: 20px;
     margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 20px;   
+    margin-right: auto;
+    margin-bottom: 20px;
     background-color: white;
     width: 80%;
     height: 50%;
@@ -82,31 +82,33 @@ header {
 }
 
 .main-content__carros select {
-    width: 500px;
-    height: 25px;
+    width: 50%;
+    height: 2em;
     margin-top: 3px;
     margin-left: 30px;
     border-radius: 15px;
     margin-bottom: 10px;
 }
-select#ano{
-    height: 25px;
-    width: 100px;
+
+select#ano {
+    height: 2em;
+    width: 15%;
     margin-top: 3px;
     margin-left: 30px;
 
-   }
+}
 
 
-.main-content__divisor__botao-adicionar{
+.main-content__divisor__botao-adicionar {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
     margin: 0 auto 20px auto;
-    
+
 }
-.main-content__botao-adicionar {           
+
+.main-content__botao-adicionar {
     width: 150px;
     padding: 10px 10px 10px 10px;
     text-align: center;
