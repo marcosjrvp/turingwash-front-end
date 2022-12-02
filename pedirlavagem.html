@@ -13,7 +13,9 @@
 
 <body>
     <header class="header">
-        <img src="images/turingwash-logo.svg" alt="logo-ituring">
+        <div class="header__imagem">
+            <img src="images/turingwash-logo.svg" alt="logo-ituring">
+        </div>
         <nav class="header__nav">
             <a href="meuscarros.html">Meus Carros</a>
             <a href="minhaslavagens.html">Minhas Lavagens</a>
@@ -39,8 +41,8 @@
             </div>
         </article>
         <article class="main-content__divisor">
-            <div>
-                <img src="images/profile.png" alt="Foto do Joao" class="main-content__divisor__image">
+            <div class="main-content__divisor__imagem">
+                <img src="images/profile.png" alt="Foto do Joao">
             </div>
             <div class="main-content__divisor__nome">
                 <span>João Pereira</span>
@@ -62,8 +64,8 @@
         </article>
 
         <article class="main-content__divisor">
-            <div>
-                <img src="images/profile.png" alt="Foto da Joana Santos" class="main-content__divisor__image">
+            <div class="main-content__divisor__imagem">
+                <img src="images/profile.png" alt="Foto da Joana Santos">
             </div>
             <div class="main-content__divisor__nome">
                 <span>Joana Santos</span>
@@ -84,8 +86,8 @@
 
         </article>
         <article class="main-content__divisor">
-            <div>
-                <img src="images/profile.png" alt="Foto do Matheus Oliveira" class="main-content__divisor__image">
+            <div class="main-content__divisor__imagem">
+                <img src="images/profile.png" alt="Foto do Matheus Oliveira">
             </div>
             <div class="main-content__divisor__nome">
                 <span>Matheus Oliveira</span>
@@ -106,8 +108,8 @@
         </article>
 
         <article class="main-content__divisor">
-            <div>
-                <img src="images/profile.png" alt="Foto do Pedro Sampaio" class="main-content__divisor__image">
+            <div class="main-content__divisor__imagem">
+                <img src="images/profile.png" alt="Foto do Pedro Sampaio">
             </div>
             <div class="main-content__divisor__nome">
                 <span>Pedro Sampaio</span>
@@ -127,28 +129,34 @@
             </div>
         </article>
     </main>
-    <footer class="rodape">
-        <section class="rodape__imagem">
-            <img src="images/turingwash-logo.svg" alt="logo-rodape-ituring">
-        </section>
-        <section>
-            <nav class="rodape__nav">
-                <a href="#">Sobre</a>
-                <a href="#">FAQ</a>
-                <a href="#">Contato</a>
-                <a href="#">Termos de Uso</a>
-            </nav>
-        </section>
-        <section class="rodape__copyright">
-            <img src="images/instagram.png" alt="foto-ituring-wash" class="rodape__copyright__imagem">
-            <div class="rodape__copyright__texto1">
-                <span>@IturingWash</span>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container__left-box">
+                <div class="footer-container__left-box__logo">
+                    <img src="images/turingwash-logo.svg" alt="logo-rodape-ituring">
+                </div>
             </div>
-            <div class="rodape__copyright__texto2">
-                <span>2022. TuringWash. Todos os direitos reservados.</span>
+            <div class="footer-container__center-box">
+                <div class="footer-container__center-box__menu">
+                    <nav class="rodape__nav">
+                        <a href="#">Sobre</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Termos de Uso</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-container__rigth-box">
+                <div class="footer-container__rigth-box__imagem">
+                    <img src="images/instagram.png" alt="foto-ituring-wash">
+                    <span>@IturingWash</span>
+                </div>
+                <div class="footer-container__rigth-box__p">
+                    <p>2022. TuringWash. Todos os direitos reservados.</p>
+                </div>
             </div>
 
-        </section>
+        </div>
 
     </footer>
 
