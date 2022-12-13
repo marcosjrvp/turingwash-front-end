@@ -46,15 +46,15 @@ header {
 
 }
 
-.header__nav__btn-sair {
-    width: 46px;
+#header__nav__botao {
+    width: 55px;
     height: 24px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
     border-color: #93F2FE;
     background-color: #93F2FE;
-    padding: 2px 7px;
+    padding: 2px 5px;
 }
 /* ul#menu{
     display: flex;
@@ -69,8 +69,9 @@ div#menuToggle input{
 /*main-content */
 
 .main-content {
-    background-color: #EAF7FF;
-    height: 570px;
+    background-color: #EAF7FF;    
+    height: auto;
+    padding-bottom: 20px;
 
 
 }
