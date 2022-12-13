@@ -7,108 +7,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/turingwash-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles/style_minhaslavagens.css">
+    <link rel="stylesheet" href="styles/minhaslavagens-mobile.css">
     <title>Minhas Lavagens</title>   
 </head>
 <body>
-    <header class="header">
-        <img src="images/turingwash-logo.svg" alt="logo-ituring">
-        <nav class="header__nav">
-            <a href="meuscarros.html">Meus Carros</a>
-            <a href="minhaslavagens.html">Minhas Lavagens</a>
-            <a href="pedirlavagem.html"><button class="header__nav__btn-sair">Sair</button></a>
+    <header>
+        <div class="header__imagem">
+            <img src="images/turingwash-logo.svg" alt="logo-ituring">
+        </div>
+        <nav class="header__nav" role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="meuscarros.html">Meus Carros</a></li>
+                    <li><a href="minhaslavagens.html">Minhas Lavagens</a></li>
+                    <li><a href="pedirlavagem.html"><button id="header__nav__botao">Sair</button></a></li>
+                </ul>
+            </div>
         </nav>
+        <script src="./js/usuario.js"></script>
+        <script>
+            if (usuario.logado == true) {
+                const estado = document.getElementById("header__nav__botao");
+                estado.textContent = "Sair";
+            }
+            else {
+                const estado = document.getElementById("header__nav__botao");
+                estado.textContent = "Entrar";
+            }
+        </script>
     </header>
     <main class="main-content">
         <section class="main-content__titulo">
             <h1>Minhas Lavagens</h1>
         </section>
-        <article class="main-content__divisor">
-            <div class="main-content__divisor__lavador">
+        <div class="main-content__box">
+            <div class="main-content__box__lavador">
                 <p>Lavador</p>
                 <p><strong>Joana Santos</strong></p>
             </div>
-            <div class="main-content__divisor__carro">
+            <div class="main-content__box__carro">
                 <p>Carro</p>
                 <p><strong>Nissan Kicks (2018)</strong></p>
             </div>
-            <div class="main-content__divisor__preco">
+            <div class="main-content__box__preco">
                 <span>R$75,00</span>
             </div>
-            <div class="main-content__divisor__data">
+            <div class="main-content__box__data">
                 <span>1 de Agosto de 2022</span>
             </div>
-        </article>
-        <article class="main-content__divisor">
-            <div class="main-content__divisor__lavador">
+        </div>
+        <div class="main-content__box">
+            <div class="main-content__box__lavador">
                 <p>Lavador</p>
                 <p><strong>Joana Santos</strong></p>
             </div>
-            <div class="main-content__divisor__carro">
+            <div class="main-content__box__carro">
                 <p>Carro</p>
                 <p><strong>Nissan Kicks (2018)</strong></p>
             </div>
-            <div class="main-content__divisor__preco">
+            <div class="main-content__box__preco">
                 <span>R$75,00</span>
             </div>
-            <div class="main-content__divisor__data">
+            <div class="main-content__box__data">
                 <span>3 de Agosto de 2022</span>
             </div>
-        </article>
-        <article class="main-content__divisor">
-            <div class="main-content__divisor__lavador">
+        </div>
+        <div class="main-content__box">
+            <div class="main-content__box__lavador">
                 <p>Lavador</p>
                 <p><strong>Matheus Oliveira</strong></p>
             </div>
-            <div class="main-content__divisor__carro-Matheus">
+            <div class="main-content__box__carro">
                 <p>Carro</p>
                 <p><strong>Chevrolet Onix (2015)</strong></p>
             </div>
-            <div class="main-content__divisor__preco-Matheus">
+            <div class="main-content__box__preco">
                 <span>R$60,00</span>
             </div>
-            <div class="main-content__divisor__data">
+            <div class="main-content__box__data">
                 <span>29 de Maio de 2022</span>
             </div>
-        </article>
-        <article class="main-content__divisor">
-            <div class="main-content__divisor__lavador">
+        </div>
+        <div class="main-content__box">
+            <div class="main-content__box__lavador">
                 <p>Lavador</p>
                 <p><strong>Joana Santos</strong></p>
             </div>
-            <div class="main-content__divisor__carro">
+            <div class="main-content__box__carro">
                 <p>Carro</p>
                 <p><strong>Nissan Kicks (2018)</strong></p>
             </div>
-            <div class="main-content__divisor__preco">
+            <div class="main-content__box__preco">
                 <span>R$75,00</span>
             </div>
-            <div class="main-content__divisor__data">
+            <div class="main-content__box__data">
                 <span>20 de Abril de 2022</span>
             </div>
-        </article>       
+        </div>       
     </main>
-    <footer class="rodape">
-        <section class="rodape__imagem">
-            <img src="images/turingwash-logo.svg" alt="logo-rodape-ituring">
-        </section>
-        <section>
-            <nav class="rodape__nav">
-                <a href="#">Sobre</a>
-                <a href="#">FAQ</a>
-                <a href="#">Contato</a>
-                <a href="#">Termos de Uso</a>
-            </nav>
-        </section>
-        <section class="rodape__copyright">
-            <img src="images/instagram.png" alt="foto-ituring-wash" class="rodape__copyright__imagem">
-            <div class="rodape__copyright__texto1">
-                <span>@IturingWash</span>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container__left-box">
+                <div class="footer-container__left-box__conteudo">
+                    <img src="images/turingwash-logo.svg" alt="logo-rodape-ituring">
+                </div>
             </div>
-            <div class="rodape__copyright__texto2">
-                <span>2022. TuringWash. Todos os direitos reservados.</span>
+            <div class="footer-container__center-box">
+                <div class="footer-container__center-box__menu">
+                    <nav class="rodape__nav">
+                        <a href="#">Sobre</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Termos de Uso</a>
+                    </nav>
+                </div>
             </div>
+            <div class="footer-container__rigth-box">
+                <div class="footer-container__rigth-box__imagem">
+                    <img src="images/instagram.png" alt="foto-ituring-wash">
+                    <span>@IturingWash</span>
+                </div>
+                <div class="footer-container__rigth-box__p">
+                    <p>2022. TuringWash. Todos os direitos reservados.</p>
+                </div>
 
-        </section>
+            </div>
+        </div>
 
     </footer>
 
