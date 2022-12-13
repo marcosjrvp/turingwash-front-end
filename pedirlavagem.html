@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css"> 
-    <link rel="stylesheet" href="styles/pedirlavagem-mobile.css">  
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/pedirlavagem-mobile.css">
     <link rel="shortcut icon" href="images/turingwash-icon.svg" type="image/x-icon">
+    
+
     <title>Pedir Lavagem</title>
 
 </head>
 
 <body>
     <header>
+
         <div class="header__imagem">
             <img src="images/turingwash-logo.svg" alt="logo-ituring">
         </div>
@@ -26,11 +29,24 @@
                 <ul id="menu">
                     <li><a href="meuscarros.html">Meus Carros</a></li>
                     <li><a href="minhaslavagens.html">Minhas Lavagens</a></li>
-                    <li><button class="header__nav__btn-sair">Sair</button></li>
+                    <li><button id="header__nav__botao">Sair</button></li>
                 </ul>
             </div>
         </nav>
+        <script src="./js/usuario.js"></script>
+        <script>
+            if (usuario.logado == true) {
+                const estado = document.getElementById("header__nav__botao");
+                estado.textContent = "Sair";
+            }
+            else {
+                const estado = document.getElementById("header__nav__botao");
+                estado.textContent = "Entrar";
+            }
+        </script>
     </header>
+
+
     <main class="main-content">
         <div class="main__titulo">
             <h1>Lavadores disponíveis próximos a você...</h1>
@@ -49,7 +65,88 @@
                 </select>
             </div>
         </div>
-        <div class="main-content__box">
+        <script src="js/lavadores.js"></script>
+        <script>
+            for (let i = 0; i < lavadores.length; i++) {
+                //Criação da div box e atribuição da classe box a ela //
+
+                const newDiv = document.createElement('div');
+                newDiv.setAttribute('class', 'main-content__box');
+
+
+                const main = document.querySelector('.main-content');
+                main.appendChild(newDiv);
+
+
+                // Criação da div imagem e atribuição da classe a ela
+
+                let newDivImage = document.createElement('div');
+                newDivImage.setAttribute('class', 'main-content__box__imagem');
+
+                // Criação da divNome e atribuição da classe a ela, e também do span
+
+                let newDivNome = document.createElement('div');
+                newDivNome.setAttribute('class', 'main-content__box__nome');
+
+                let newSpanNome = document.createElement('span');
+                newSpanNome.textContent = `${lavadores[i].nome}`;
+
+                newDivNome.appendChild(newSpanNome);
+
+                //Criação da divNota e atribuição da classe a ela, e também do span
+                let newDivNota = document.createElement('div');
+                newDivNota.setAttribute('class', 'main-content__box__nota');
+
+                let newSpanNota = document.createElement('span');
+                newSpanNota.textContent = `Nota ${lavadores[i].nota} (${lavadores[i].qtdAvaliacoes} avaliações)`;
+
+                newDivNota.appendChild(newSpanNota)
+
+                // Criação da divPreço  e atribuição da classe a ela e também do span
+                let newDivPreco = document.createElement('div');
+                newDivPreco.setAttribute('class', 'main-content__box__preco');
+
+                let newSpanPreco = document.createElement('span');
+                newSpanPreco.textContent = `R$ ${lavadores[i].valorCobrado}`;
+                newDivPreco.appendChild(newSpanPreco);
+
+                // Criação da divAvaliacao e atribuição da classe a ela e também do link
+                let newDivAvaliacao = document.createElement('div');
+                newDivAvaliacao.setAttribute('class', 'main-content__box__avaliacao');
+
+                let linkAvaliacao = document.createElement('a');
+                linkAvaliacao.setAttribute('href', '#');
+                linkAvaliacao.textContent = 'Ver avaliações';
+
+                newDivAvaliacao.appendChild(linkAvaliacao);
+
+                // Criação da dviBotao e atribuição da classe com seu link
+                let newDivBotao = document.createElement('div');
+                newDivBotao.setAttribute('class', 'main-content__box__botao');
+
+                let linkBotao = document.createElement('a');
+                linkBotao.setAttribute('href', 'adicionarcarro.html');
+                newDivBotao.appendChild(linkBotao);
+
+                let newBotao = document.createElement('button')
+                newBotao.className = 'main-content__box__botao-lavar';
+                newBotao.textContent = 'Lavar meu carro';
+
+                linkBotao.appendChild(newBotao);
+
+                newDiv.appendChild(newDivImage);
+                newDiv.appendChild(newDivNome);
+                newDiv.appendChild(newDivNota);
+                newDiv.appendChild(newDivPreco);
+                newDiv.appendChild(newDivAvaliacao);
+                newDiv.appendChild(newDivBotao);
+
+            }
+
+        </script>
+        <!-- Código criado antes da manipulação com o DOM
+            
+            <div class="main-content__box">            
             <div class="main-content__box__imagem">
             </div>
             <div class="main-content__box__nome">
@@ -65,7 +162,7 @@
                 <a href="#">Ver avaliações</a>
             </div>
             <div class="main-content__box__botao">
-                <a href="adicionarcarro.html"><button class="main-content__box__botao-lavar">Lavar meu
+               <a href="adicionarcarro.html"><button class="main-content__box__botao-lavar">Lavar meu
                         carro</button></a>
             </div>
         </div>
@@ -131,8 +228,7 @@
                 <a href="adicionarcarro.html"><button class="main-content__box__botao-lavar">Lavar meu
                         carro</button></a>
             </div>
-        </div>
-
+        </div> -->
     </main>
     <footer>
         <div class="footer-container">
@@ -164,7 +260,7 @@
         </div>
 
     </footer>
-   
+
 
 </body>
 
