@@ -159,7 +159,7 @@
     #menu {
         position: absolute;        
         margin: 0px 0 0 -50px;
-        height: 868px;
+        height: 968px;
         width: 480px; 
         padding-top: 10px;
 
@@ -346,70 +346,7 @@
         padding: 4px;
         border: transparent;
         font-size: 12px;
-    }
-
-    .main-content_divisor_image {
-        position: absolute;
-        height: 60px;
-        padding: 10px 20px;
-        top: 23%;
-        left: 2%;
-
-
-    }
-
-    .main-content_divisor_nome {
-        position: absolute;
-        top: 9%;
-        left: 7%;
-        font-weight: bold;
-        width: 125px;
-        font-size: 12px;
-    }
-
-    .main-content_divisor_nota {
-        top: 9%;
-        left: 48%;
-        width: 121px;
-        font-size: 12px;
-        position: absolute;
-    }
-
-
-    .main-content_divisor_preco {
-
-        position: relative;
-        top: -698%;
-        left: 95%;
-        font-weight: bold;
-        width: 40px;
-
-
-    }
-
-    .main-content_divisor_preco>span {
-        padding: 2px 2px;
-        background-color: #93F2FE;
-    }
-
-
-
-    .main-content_divisor_avaliacao {
-        position: absolute;
-        top: 83%;
-        left: 7%;
-        font-weight: 400;
-        width: 70px;
-        font-size: 12px;
-    }
-
-    .main_content_divisor_botao {
-        position: absolute;
-        top: 77%;
-        left: 49%;
-        width: 106px;
-
-    }
+    }     
 
     /* fim da criação dos boxs dos lavadores */
 
